@@ -56,6 +56,8 @@
 
 <body>
 <main>
+  <div class="main-content">
+    <main>
     <div class="main-content">
       <h1 class="main-heading">Suzie's Adventures in China</h1>
       <h2 class="subtitle">苏茜在中国的奇遇记</h2>
@@ -70,12 +72,24 @@
         <a href="itinerary.html" class="fancy-button">🗾 View Itinerary</a>
       </nav>
     </div>
-  </main>
+  
 
   <footer>
     © Suzie 2025
   </footer>
 
+
+<script>
+  function updateVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', updateVH);
+  window.addEventListener('orientationchange', updateVH);
+  updateVH();
+</script>
+  </div>
+</main>
 
 <script>
   function updateVH() {
