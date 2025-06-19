@@ -24,6 +24,11 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+  }
+}
 }
 
 body.gallery-page {
@@ -222,4 +227,30 @@ footer {
   footer {
     font-size: 0.85em;
   }
+}
+/* Ensure the page stretches to full height and positions footer correctly */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+main {
+  flex: 1;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
