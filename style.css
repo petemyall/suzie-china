@@ -255,8 +255,8 @@ img {
   margin: 0 auto;
 }
 body.journal-page .description-box {
-  max-height: calc(100dvh - 220px); /* Adjust height based on your layout */
+  max-height: calc(100dvh - 240px); /* was 220px, now adds extra breathing room */
   overflow-y: auto;
   padding-right: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; /* this keeps it visually separate from the footer */
 }
