@@ -11,53 +11,13 @@
   <!-- Apple-specific PWA support -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="J&M Bailey">
+  <meta name="apple-mobile-web-app-title" content="Suzie's China Trip">
   <link rel="apple-touch-icon" href="images/icon-512x512.png">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-  <style>
-    .main-heading {
-      text-align: center;
-      margin: 20px;
-      font-size: 2.75em;
-      font-weight: 900;
-      color: #ffffff;
-      text-shadow:
-        2px 2px 4px rgba(0, 0, 0, 0.8),
-       -1px -1px 0 rgba(0, 0, 0, 0.6);
-    }
-
-    .subtitle {
-      text-align: center;
-      font-size: 1.75em;
-      font-weight: 600;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-      margin-top: -10px;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      padding: 10px;
-      background: rgba(0, 0, 0, 0.4);
-      color: white;
-    }
-  </style>
 </head>
-<script>
-  function updateVH() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  window.addEventListener('resize', updateVH);
-  window.addEventListener('orientationchange', updateVH);
-  updateVH();
-</script>
 
 <body>
-<main>
-  <div class="main-content">
-    <main>
+  <main>
     <div class="main-content">
       <h1 class="main-heading">Suzie's Adventures in China</h1>
       <h2 class="subtitle">苏茜在中国的奇遇记</h2>
@@ -72,35 +32,20 @@
         <a href="itinerary.html" class="fancy-button">🗾 View Itinerary</a>
       </nav>
     </div>
-  
+  </main>
 
   <footer>
     © Suzie 2025
   </footer>
 
-
-<script>
-  function updateVH() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  window.addEventListener('resize', updateVH);
-  window.addEventListener('orientationchange', updateVH);
-  updateVH();
-</script>
-  </div>
-</main>
-
-<script>
-  function updateVH() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  window.addEventListener('resize', updateVH);
-  window.addEventListener('orientationchange', updateVH);
-  updateVH();
-</script>
-  </div>
-</main>
+  <script>
+    function updateVH() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    window.addEventListener('resize', updateVH);
+    window.addEventListener('orientationchange', updateVH);
+    updateVH();
+  </script>
 </body>
 </html>
