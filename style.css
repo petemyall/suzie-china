@@ -66,9 +66,9 @@ h1, h2 {
 
 /* Description box */
 .description-box {
-  font-size: clamp(0.9rem, 8vw, 1.2rem);
+  font-size: clamp(1.2rem, 7vw, 3rem);
   margin: 10px auto;
-  padding: 15px 20px;
+  padding: 2px 20px;
   background: rgba(247, 200, 208, 0.75);
   color: #b30000;
   max-width: 800px;
