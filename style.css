@@ -57,7 +57,7 @@ h1, h2 {
 /* Main heading and subtitle */
 .main-heading {
   font-size: clamp(1.4rem, 4vw, 2rem);
-  margin-top: 0.1vh;
+  margin-top: 1vh;
 }
 
 .subtitle {
