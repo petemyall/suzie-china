@@ -210,7 +210,7 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .description-box {
-    font-size: 3.5rem !important;
+    font-size: 2.75rem !important;
   }
 
   .main-heading {
