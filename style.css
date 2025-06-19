@@ -260,3 +260,20 @@ body.journal-page .description-box {
   padding-right: 1rem;
   margin-bottom: 2rem; /* this keeps it visually separate from the footer */
 }
+/* Sticky heading for itinerary */
+.sticky-heading {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 100;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Scrollable itinerary content */
+.scrollable-content {
+  overflow-y: auto;
+  max-height: calc(100dvh - 220px); /* Adjust if needed */
+  padding-right: 1rem;
+}
