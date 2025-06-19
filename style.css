@@ -263,7 +263,7 @@ body.journal-page .description-box {
 /* Sticky heading for itinerary */
 .sticky-heading {
   position: sticky;
-  top: -10;
+  top: -25;
   background-color: rgba(247, 200, 208, 0.75);
   z-index: 100;
   padding: 5px 0;
