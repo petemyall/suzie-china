@@ -61,12 +61,12 @@ h1, h2 {
 }
 
 .subtitle {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 /* Description box */
 .description-box {
-  font-size: clamp(0.9rem, 3vw, 1.2rem);
+  font-size: clamp(0.9rem, 4vw, 1.2rem);
   margin: 10px auto;
   padding: 2px 20px;
   background: rgba(247, 200, 208, 0.75);
