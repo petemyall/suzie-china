@@ -254,3 +254,9 @@ img {
   display: block;
   margin: 0 auto;
 }
+body.journal-page .description-box {
+  max-height: calc(100dvh - 220px); /* Adjust height based on your layout */
+  overflow-y: auto;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+}
