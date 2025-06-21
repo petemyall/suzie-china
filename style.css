@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Sawarabi+Mincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Sawarabi+Mincho&family=Liu+Jian+Mao+Cao&display=swap');
+
 
 /* RESET & STRUCTURE */
 * {
@@ -31,16 +32,19 @@ html, body {
 body.gallery-page {
   background-image: url('images/gallery-page-background.jpg');
 }
+body.language-page {
+  background-image: url('images/language-page-background.jpg');
+}
 
 body.itinerary-page {
-  background-image: url('images/itinerary-map.jpg');
+  background-image: url('images/itinerary-page-background.jpg');
 }
 
 body.journal-page {
   background-image: url('images/journal-page-background.jpg');
 }
 
-body:not(.gallery-page):not(.itinerary-page):not(.journal-page) {
+body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-page) {
   background-image: url('images/home-page-background.jpg');
 }
 
@@ -70,15 +74,25 @@ main {
 /* HEADER BOX */
 .header-box {
   margin-top: 0;
+  margin-bottom: 5px;
   padding: 0.5vh 1.5rem 1vh 1.5rem;
-  background: rgba(255, 255, 255, 0.65);
-  border-radius: 0 0 12px 12px;
+  background: rgba(249, 255, 217, 0.65);
+  border-radius:  12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   max-width: 700px;
 }
+.header-boxit {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 0.5vh 1.5rem 0.5vh 1.5rem;
+  background: rgba(249, 255, 217, 0.65);
+  border-radius:  15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 750px;
+}
 
 .main-heading {
-  font-family: 'Ma Shan Zheng', cursive;
+  font-family: 'Liu Jian Mao', cursive;
   font-size: clamp(2.7rem, 7.5vw, 3.75rem);
   margin-bottom: 0.2em;
   color: #b30000;
@@ -88,7 +102,7 @@ main {
 .subtitle {
   font-family: 'Ma Shan Zheng', cursive;
   font-size: clamp(1.9rem, 6vw, 3rem);
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
   color: #b30000;
 }
 
@@ -107,12 +121,40 @@ main {
   font-size: clamp(1.05rem, 4vw, 1.3rem);
   line-height: 1.65;
   padding: 10px 25px;
-  background: rgba(247, 200, 208, 0.75);
+  background: rgba(249, 255, 217, 0.65);
+  color: #b30000;
+  max-width: 750px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 95vw
+  text-align: center;
+}
+.description-box1 {
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  line-height: 1.65;
+  padding: 5px 25px;
+  margin-top: 2vh;
+  background: rgba(249, 255, 217, 0.65);
   color: #b30000;
   max-width: 750px;
   border-radius: 15px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+.description-box2 {
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  line-height: 1.65;
+  padding: 5px 25px;
+  background: rgba(249, 255, 217, 0.65);
+  color: #b30000;
+  max-width: 750px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-height: 28vh;
+  overflow-y: auto;
 }
 
 /* NAV BUTTONS */
@@ -138,6 +180,21 @@ nav a.fancy-button {
   backdrop-filter: blur(4px);
 }
 
+nav back-button {
+  flex: 1 1 45%;
+  max-width: 200px;
+  padding: 10px 14px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  background-color: rgba(179, 0, 0, 0.75);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
 nav a.fancy-button:hover {
   background-color: rgba(179, 0, 0, 0.9);
   transform: scale(1.05);
@@ -147,6 +204,47 @@ nav a.fancy-button::after {
   content: " ➡️";
   opacity: 0.8;
   font-size: 0.9em;
+}
+.album-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px; /* space between buttons */
+  margin-top: 20px;
+}
+
+.album-link {
+  display: inline-block;
+  flex: 1 1 calc(50% - 12px);
+  max-width: 220px;
+  padding: 10px 14px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  background-color: rgba(179, 0, 0, 0.75);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(4px);
+  text-align: center;
+}
+
+.album-link:hover {
+  background-color: rgba(179, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+.album-link::after {
+  content: " ➡️";
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+@media (max-width: 500px) {
+  .album-link {
+    flex: 1 1 100%;
+  }
 }
 
 /* IMAGE */
@@ -161,7 +259,7 @@ img {
 footer {
   background-color: #b30000;
   color: white;
-  padding: 15px;
+  padding: 10px;
   font-size: 0.9em;
   letter-spacing: 1px;
 }
