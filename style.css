@@ -128,7 +128,7 @@ main {
 .description-box1 {
   margin-top: 2vh;
   font-size: clamp(0.9rem, 3vw, 1.1rem);
-  padding: 5px 25px;
+  padding: 5px 15px;
 }
 .description-box2 {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
@@ -180,7 +180,7 @@ nav a.fancy-button::after {
   display: inline-block;
   flex: 1 1 calc(50% - 12px);
   max-width: 220px;
-  padding: 10px 14px;
+  padding: 10px 10px;
   font-size: clamp(0.9rem, 2.5vw, 1rem);
   background-color: rgba(179, 0, 0, 0.75);
   color: white;
@@ -264,7 +264,7 @@ footer {
 
   nav a.fancy-button,
   .album-link {
-    font-size: clamp(0.85rem, 4vw, 1rem);
+    font-size: clamp(0.65rem, 4vw, 1rem);
     padding: 10px 14px;
     text-align: center;
   }
