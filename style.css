@@ -229,91 +229,10 @@ footer {
   }
 }
 
-
-
-  .main-heading,
-  .subtitle,
-  .description-box,
-  .description-box1,
-  .description-box2,
-  .album-link,
-  nav a.fancy-button,
-  p, li, span, a,
-  footer {
-    font-size: 4rem !important;
-  }
-
-  .description-box,
-  .description-box1,
-  .description-box2,
-  .album-link,
-  nav a.fancy-button {
-    padding: 20px;
-    margin: 10px 0;
-  }
-
-  footer {
-    padding: 14px;
-  }
-}
-
-
-/* CLEAN MOBILE STYLES - up to 768px */
-/* -------------------------------------------
-   MOBILE-ONLY STYLES (for screens under 600px)
-   ------------------------------------------- */
-@media (max-width: 599px) {
+/* FINAL MOBILE STYLES */
+@media (max-width: 600px) {
   .main-content {
-    padding: 2vh 12px;
+    padding: 2vh 10px;
   }
 
-  .main-heading {
-    font-size: clamp(2rem, 6.5vw, 2.4rem);
-    line-height: 1.2;
-  }
-
-  .subtitle {
-    font-size: clamp(1.4rem, 6vw, 2rem);
-    line-height: 1.3;
-  }
-
-  .description-box,
-  .description-box1,
-  .description-box2 {
-    font-size: clamp(1.1rem, 4.5vw, 1.4rem);
-    padding: 14px 20px;
-    line-height: 1.7;
-  }
-
-  nav a.fancy-button,
-  .album-link {
-    font-size: clamp(0.95rem, 4.5vw, 1.2rem);
-    padding: 12px 16px;
-    text-align: center;
-  }
-
-  .lower-block {
-    gap: 1.5vh;
-  }
-
-  .header-box,
-  .header-boxit {
-    padding: 1rem 1.2rem;
-  }
-
-  footer,
-  .site-footer {
-    font-size: 1rem;
-    padding: 12px;
-    text-align: center;
-  }
-
-  p, li, span, a {
-    font-size: clamp(1rem, 4vw, 1.2rem);
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
+  
