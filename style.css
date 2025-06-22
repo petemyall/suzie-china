@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Sawarabi+Mincho&family=Liu+Jian+Mao+Cao&display=swap');
 
-
 /* RESET & STRUCTURE */
 * {
   box-sizing: border-box;
@@ -35,15 +34,12 @@ body.gallery-page {
 body.language-page {
   background-image: url('images/language-page-background.jpg');
 }
-
 body.itinerary-page {
   background-image: url('images/itinerary-page-background.jpg');
 }
-
 body.journal-page {
   background-image: url('images/journal-page-background.jpg');
 }
-
 body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-page) {
   background-image: url('images/home-page-background.jpg');
 }
@@ -71,26 +67,24 @@ main {
   margin: 0 auto;
 }
 
-/* HEADER BOX */
-.header-box {
-  margin-top: 0;
-  margin-bottom: 5px;
-  padding: 0.5vh 1.5rem 1vh 1.5rem;
-  background: rgba(249, 255, 217, 0.65);
-  border-radius:  12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  max-width: 700px;
-}
+/* HEADER BOXES */
+.header-box,
 .header-boxit {
-  margin-top: 0;
-  margin-bottom: 10px;
-  padding: 0.5vh 1.5rem 0.5vh 1.5rem;
   background: rgba(249, 255, 217, 0.65);
-  border-radius:  15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0.5vh 1.5rem;
+  border-radius: 12px;
   max-width: 750px;
 }
+.header-box {
+  margin: 0 0 5px 0;
+}
+.header-boxit {
+  margin: 0 0 10px 0;
+  border-radius: 15px;
+}
 
+/* HEADINGS */
 .main-heading {
   font-family: 'Liu Jian Mao', cursive;
   font-size: clamp(2.7rem, 7.5vw, 3.75rem);
@@ -98,7 +92,6 @@ main {
   color: #b30000;
   text-shadow: 1px 1px 2px #fff;
 }
-
 .subtitle {
   font-family: 'Ma Shan Zheng', cursive;
   font-size: clamp(1.9rem, 6vw, 3rem);
@@ -106,7 +99,7 @@ main {
   color: #b30000;
 }
 
-/* LOWER BLOCK */
+/* CONTENT BOXES */
 .lower-block {
   display: flex;
   flex-direction: column;
@@ -115,8 +108,9 @@ main {
   margin-bottom: 2vh;
 }
 
-/* DESCRIPTION BOX */
-.description-box {
+.description-box,
+.description-box1,
+.description-box2 {
   font-family: 'Sawarabi Mincho', serif;
   font-size: clamp(1.05rem, 4vw, 1.3rem);
   line-height: 1.65;
@@ -126,33 +120,19 @@ main {
   max-width: 750px;
   border-radius: 15px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 95vw
   text-align: center;
+}
+.description-box {
+  max-width: 95vw;
 }
 .description-box1 {
-  font-family: 'Sawarabi Mincho', serif;
-  font-size: clamp(0.9rem, 3vw, 1.1rem);
-  line-height: 1.65;
-  padding: 5px 25px;
   margin-top: 2vh;
-  background: rgba(249, 255, 217, 0.65);
-  color: #b30000;
-  max-width: 750px;
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  padding: 5px 25px;
 }
 .description-box2 {
-  font-family: 'Sawarabi Mincho', serif;
   font-size: clamp(0.9rem, 3vw, 1.1rem);
-  line-height: 1.65;
   padding: 5px 25px;
-  background: rgba(249, 255, 217, 0.65);
-  color: #b30000;
-  max-width: 750px;
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
   max-height: 28vh;
   overflow-y: auto;
 }
@@ -164,7 +144,6 @@ nav {
   justify-content: center;
   gap: 12px;
 }
-
 nav a.fancy-button {
   flex: 1 1 45%;
   max-width: 200px;
@@ -179,40 +158,24 @@ nav a.fancy-button {
   transition: background-color 0.3s ease, transform 0.3s ease;
   backdrop-filter: blur(4px);
 }
-
-nav back-button {
-  flex: 1 1 45%;
-  max-width: 200px;
-  padding: 10px 14px;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
-  background-color: rgba(179, 0, 0, 0.75);
-  color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  font-weight: bold;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  backdrop-filter: blur(4px);
-}
-
 nav a.fancy-button:hover {
   background-color: rgba(179, 0, 0, 0.9);
   transform: scale(1.05);
 }
-
 nav a.fancy-button::after {
   content: " ➡️";
   opacity: 0.8;
   font-size: 0.9em;
 }
+
+/* ALBUM LINKS */
 .album-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px; /* space between buttons */
+  gap: 12px;
   margin-top: 20px;
 }
-
 .album-link {
   display: inline-block;
   flex: 1 1 calc(50% - 12px);
@@ -229,18 +192,15 @@ nav a.fancy-button::after {
   backdrop-filter: blur(4px);
   text-align: center;
 }
-
 .album-link:hover {
   background-color: rgba(179, 0, 0, 0.9);
   transform: scale(1.05);
 }
-
 .album-link::after {
   content: " ➡️";
   opacity: 0.8;
   font-size: 0.9em;
 }
-
 @media (max-width: 500px) {
   .album-link {
     flex: 1 1 100%;
@@ -263,10 +223,40 @@ footer {
   font-size: 0.9em;
   letter-spacing: 1px;
 }
-
-/* RESPONSIVE FOOTER */
 @media (max-width: 600px) {
   footer {
     font-size: 0.85em;
+  }
+}
+
+/* FINAL MOBILE STYLES */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 2vh 10px;
+  }
+
+  .main-heading,
+  .subtitle,
+  .description-box,
+  .description-box1,
+  .description-box2,
+  .album-link,
+  nav a.fancy-button,
+  p, li, span, a,
+  footer {
+    font-size: 4rem !important;
+  }
+
+  .description-box,
+  .description-box1,
+  .description-box2,
+  .album-link,
+  nav a.fancy-button {
+    padding: 20px;
+    margin: 10px 0;
+  }
+
+  footer {
+    padding: 14px;
   }
 }
