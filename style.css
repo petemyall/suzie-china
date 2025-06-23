@@ -290,6 +290,9 @@ footer {
   .header-boxit {
     padding: 0.8rem 1.2rem;
   }
+  h2 {
+    font-size: 1.25rem;
+  }
 
   footer,
   .site-footer {
