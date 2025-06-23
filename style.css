@@ -266,7 +266,7 @@ footer {
   .description-box {
     font-size: clamp(1rem, 6vw, 1.4rem);
     padding: 14px 20px;
-    margin-top: 0.5vh;
+    margin-top: 0.1vh;
   }
 
   .description-box1 {
