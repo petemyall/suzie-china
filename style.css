@@ -253,7 +253,7 @@ footer {
   .description-box,
   .description-box1,
   .description-box2 {
-    font-size: clamp(1.1rem, 4vw, 1.15rem);
+    font-size: clamp(1.15rem, 4vw, 1.15rem);
     padding: 2px 15px;
     line-height: 1.6;
   }
