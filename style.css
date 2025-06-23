@@ -286,9 +286,11 @@ footer {
     text-align: center;
   }
 
-  .header-box,
-  .header-boxit {
+  .header-box {
     padding: 0.8rem 1.2rem;
+  }
+  .header-boxit {
+    padding: 0.1rem 0.6rem;
   }
   h2 {
     font-size: 1.25rem;
