@@ -270,7 +270,7 @@ footer {
 
   .description-box1 {
     font-size: clamp(1rem, 5vw, 1.8rem);
-    padding: 5px 18px;
+    padding: 1px 18px;
   }
 
   .description-box2 {
