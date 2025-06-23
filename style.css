@@ -276,7 +276,7 @@ footer {
   .description-box2 {
     font-size: clamp(0.95rem, 3.8vw, 1.1rem);
     padding: 10px 16px;
-    max-height: 28vh;
+    max-height: 20vh;
   }
 
   nav a.fancy-button,
