@@ -284,9 +284,10 @@ footer {
 
   nav a.fancy-button,
   .album-link {
-    font-size: clamp(0.95rem, 4vw, 1.1rem);
-    padding: 10px 14px;
-    text-align: center;
+    flex: 1 1 48%;
+    font-size: clamp(0.85rem, 4vw, 0.95rem);
+    padding: 8px;
+    margin: 4px;
   }
 
   .header-box {
