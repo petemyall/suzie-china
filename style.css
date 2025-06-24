@@ -256,6 +256,7 @@ footer {
   .main-heading {
     font-size: clamp(1.5rem, 5.5vw, 2rem);
     line-height: 1.2;
+    margin-bottom: 0.1em;
   }
 
   .subtitle {
@@ -272,6 +273,7 @@ footer {
   .description-box1 {
     font-size: clamp(1rem, 5vw, 1.8rem);
     padding: 1px 18px;
+    margin-top: 0.5vh;
   }
 
   .description-box2 {
