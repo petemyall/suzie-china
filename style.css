@@ -151,6 +151,7 @@ h2 {
   margin-top: 2vh;
   max-height: 35vh;
   max-width: 750px;
+  overflow-y: auto;
   
 }
 
