@@ -266,13 +266,15 @@ footer {
   }
 
   .main-heading {
-    font-size: clamp(1.5rem, 5.5vw, 2rem);
+    font: bold;
+    font-size: clamp(2rem, 6vw, 2rem);
     line-height: 1.2;
     margin-bottom: 0.1em;
   }
 
   .subtitle {
-    font-size: clamp(1.2rem, 5vw, 1.6rem);
+    font: bold;
+    font-size: clamp(1.75rem, 5.5vw, 1.8rem);
     line-height: 1.3;
   }
 
