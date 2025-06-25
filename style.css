@@ -124,7 +124,7 @@ h2 {
   gap: 2vh;
   margin-bottom: 2vh;
 }
-
+/* INDEX PAGE */
 .description-box {
   font-family: 'Times New Roman', serif;
   font-size: clamp(1.05rem, 4vw, 1.3rem);
@@ -137,7 +137,7 @@ h2 {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-
+/* JOURNAL PAGE*/
 .description-box1 {
   font-family: 'Times New Roman', serif;
   font-size: clamp(0.95rem, 3vw, 1.1rem);
