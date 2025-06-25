@@ -262,7 +262,7 @@ footer {
 /* MOBILE OVERRIDES FOR TEXT & BOXES */
 @media (max-width: 599px) {
   .main-content {
-    padding: 1.5vh 12px;
+    padding: 0.5vh 12px;
   }
 
   .main-heading {
