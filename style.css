@@ -149,7 +149,9 @@ h2 {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   margin-top: 2vh;
+  max-height: 35vh;
   max-width: 750px;
+  
 }
 
 .description-box2 {
