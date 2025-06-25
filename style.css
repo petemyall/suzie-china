@@ -152,7 +152,10 @@ h2 {
   max-height: 35vh;
   max-width: 750px;
   overflow-y: auto;
-  
+  }
+.description-box1.scrollable {
+  max-height: 35vh;
+  overflow-y: auto;
 }
 
 .description-box2 {
