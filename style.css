@@ -157,13 +157,14 @@ h2 {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   line-height: 1.6;
   padding: 8px 20px;
+  margin-bottom: 1px;
   background: rgba(249, 255, 217, 0.65);
   color: #b30000;
   border-radius: 15px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
   max-width: 750px;
-  max-height: 28vh;
+  max-height: 25vh;
   overflow-y: auto;
 }
 
