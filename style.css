@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Sawarabi+Mincho&family=Liu+Jian+Mao+Cao&display=swap');
+@font-face {
+  font-family: 'Noto Serif CJK SC';
+  src: url('NotoSerifCJKsc-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Spicy Rice';
+  src: url('SpicyRice-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* RESET & STRUCTURE */
 * {
