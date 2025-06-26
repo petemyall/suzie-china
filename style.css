@@ -330,6 +330,11 @@ footer {
     padding: 8px;
     margin: 4px;
   }
+  body.gallery-page .album-link {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+  }
+  
 
   .header-box {
     padding: 0.8rem 1.2rem;
