@@ -324,6 +324,9 @@ footer {
   .header-box {
     padding: 0.8rem 1.2rem;
   }
+   body.journal-page .header-box {
+    padding: 0.4rem 0.6rem;
+   }
   .header-boxit {
     padding: 0.1rem 0.6rem;
   }
