@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
   font-family: 'Noto Serif CJK SC';
   src: url('NotoSerifCJKsc-Light.woff2') format('woff2');
   font-weight: 300;
@@ -319,6 +319,8 @@ footer {
     font-size: 0.75rem;
     padding: 5px 10px;
   }
+  body.gallery-page .subtitle {
+    font-size: clamp(0.9rem, 3vw, 1rem);
   
 
   .header-box {
