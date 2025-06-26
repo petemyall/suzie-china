@@ -273,6 +273,9 @@ footer {
     line-height: 1.2;
     margin-bottom: 0.1em;
   }
+  body.journal-page .main-heading {
+    font-size: clamp(1.5rem, 4.5vw, 1.5rem);
+  }
 
   .subtitle {
     font: bold;
