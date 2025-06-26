@@ -351,4 +351,4 @@ footer {
   p, li, span, a {
     font-size: clamp(1rem, 4vw, 1.2rem);
   }
-  }
+}
