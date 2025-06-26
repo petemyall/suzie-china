@@ -58,7 +58,7 @@ body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-pa
 
 main {
   flex: 1;
-  padding: 0;
+  padding: 0.5vh;
 }
 
 .main-content {
