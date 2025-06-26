@@ -317,6 +317,11 @@ footer {
     max-height: 25vh;
     margin-top: 0.1vh;
   }
+   .description-box3 {
+    font-size: clamp(1rem, 5vw, 1.8rem);
+    padding: 1px 18px;
+    margin-top: 0.1vh;
+   }
 
   nav a.fancy-button,
   .album-link {
