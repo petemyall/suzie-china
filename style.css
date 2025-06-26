@@ -11,8 +11,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
-/ RESET & STRUCTURE /
+/* RESET & STRUCTURE */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,8 +46,7 @@ body.journal-page { background-image: url('images/journal-page-background.jpg');
 body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-page) {
   background-image: url('images/home-page-background.jpg');
 }
-
-/ PAGE LAYOUT /
+/* PAGE LAYOUT */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -70,8 +68,7 @@ main {
   max-width: 900px;
   margin: 0 auto;
 }
-
-/ HEADER BOXES /
+/* HEADER BOXES */
 .header-box,
 .header-boxit {
   background: rgba(249, 255, 217, 0.65);
@@ -85,8 +82,7 @@ main {
   margin: 0 0 10px 0;
   border-radius: 15px;
 }
-
-/ HEADINGS /
+/* HEADINGS */
 .main-heading {
   font-family: 'Spicy Rice', cursive;
   font-size: clamp(2rem, 6vw, 3rem);
@@ -115,8 +111,7 @@ h2 {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
-
-/ CONTENT BOXES /
+/* CONTENT BOXES */
 .lower-block {
   display: flex;
   flex-direction: column;
@@ -124,7 +119,7 @@ h2 {
   gap: 2vh;
   margin-bottom: 2vh;
 }
-/ INDEX PAGE /
+/* INDEX PAGE */
 .description-box {
   font-family: 'Times New Roman', serif;
   font-size: clamp(1.05rem, 4vw, 1.3rem);
@@ -137,7 +132,7 @@ h2 {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-/ JOURNAL PAGE/
+/* JOURNAL PAGE */
 .description-box1 {
   font-family: 'Times New Roman', serif;
   font-size: clamp(0.95rem, 3vw, 1.1rem);
@@ -173,7 +168,7 @@ h2 {
   max-height: 25vh;
   overflow-y: auto;
 }
-/ GALLERY PAGE/
+/* GALLERY PAGE */
 .description-box3 {
   font-family: 'Times New Roman', serif;
   font-size: clamp(1.05rem, 4vw, 1.3rem);
@@ -187,8 +182,7 @@ h2 {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-
-/ NAV BUTTONS /
+/* NAV BUTTONS */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -214,8 +208,7 @@ nav a.fancy-button:hover {
   background-color: rgba(179, 0, 0, 0.9);
   transform: scale(1.05);
 }
-
-/ ALBUM LINKS /
+/* ALBUM LINKS */
 .album-links {
   display: flex;
   flex-wrap: wrap;
@@ -248,16 +241,14 @@ nav a.fancy-button:hover {
     flex: 1 1 100%;
   }
 }
-
-/ IMAGE /
+/* IMAGE */
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
-
-/ FOOTER /
+/* FOOTER */
 footer {
   background-color: #b30000;
   color: white;
@@ -270,8 +261,7 @@ footer {
     font-size: 0.85em;
   }
 }
-
-/ MOBILE OVERRIDES FOR TEXT & BOXES /
+/* MOBILE OVERRIDES FOR TEXT & BOXES */
 @media (max-width: 599px) {
   .main-content {
     padding: 0.5vh 12px;
@@ -351,4 +341,4 @@ footer {
   p, li, span, a {
     font-size: clamp(1rem, 4vw, 1.2rem);
   }
-}
+                   }
