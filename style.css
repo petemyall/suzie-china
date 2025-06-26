@@ -213,11 +213,6 @@ nav a.fancy-button:hover {
   background-color: rgba(179, 0, 0, 0.9);
   transform: scale(1.05);
 }
-nav a.fancy-button::after {
-  content: " ➡️";
-  opacity: 0.8;
-  font-size: 0.9em;
-}
 
 /* ALBUM LINKS */
 .album-links {
