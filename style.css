@@ -52,7 +52,7 @@ body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-pa
 .page-container {
   display: flex;
   flex-direction: column;
-  min-height: 100dvh;
+  min-height: 100%; /*dvh*/
   overflow: hidden;
 }
 
