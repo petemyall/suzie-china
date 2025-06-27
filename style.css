@@ -125,7 +125,8 @@ h2 {
 .description-box,
 .description-box1,
 .description-box2,
-.description-box3 {
+.description-box3
+.description-box4{
   font-family: 'Times New Roman', serif;
   line-height: 1.6;
   background: rgba(249, 255, 217, 0.65);
@@ -164,6 +165,13 @@ h2 {
 
 /*gallery.html*/
 .description-box3 {
+  font-size: clamp(1.05rem, 4vw, 1.3rem);
+  max-height: 55vh;
+  margin-top: 89px;
+}
+
+/*day1.html journal*/
+.description-box4 {
   font-size: clamp(1.05rem, 4vw, 1.3rem);
   max-height: 55vh;
   margin-top: 89px;
