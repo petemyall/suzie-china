@@ -1,4 +1,5 @@
- @font-face {
+
+@font-face {
   font-family: 'Noto Serif CJK SC';
   src: url('NotoSerifCJKsc-Light.woff2') format('woff2');
   font-weight: 300;
@@ -11,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /* RESET & STRUCTURE */
 * {
   box-sizing: border-box;
@@ -21,22 +23,16 @@
 }
 
 html, body {
-  height: 100%;
+  min-height: 100dvh;
+  height: auto;
   font-family: 'Times New Roman', serif;
   overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
+  display: block;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   color: #3a3a3a;
   text-align: center;
-}
-
-@media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-  }
 }
 
 body.gallery-page { background-image: url('images/gallery-page-background.jpg'); }
@@ -46,6 +42,7 @@ body.journal-page { background-image: url('images/journal-page-background.jpg');
 body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-page) {
   background-image: url('images/home-page-background.jpg');
 }
+
 /* PAGE LAYOUT */
 .page-container {
   display: flex;
@@ -68,6 +65,7 @@ main {
   max-width: 900px;
   margin: 0 auto;
 }
+
 /* HEADER BOXES */
 .header-box,
 .header-boxit {
@@ -82,6 +80,7 @@ main {
   margin: 0 0 10px 0;
   border-radius: 15px;
 }
+
 /* HEADINGS */
 .main-heading {
   font-family: 'Spicy Rice', cursive;
@@ -90,12 +89,14 @@ main {
   color: #b30000;
   text-shadow: 1px 1px 2px #fff;
 }
+
 .subtitle {
   font-family: 'Noto Serif CJK SC', serif;
   font-size: clamp(1.75rem, 5vw, 2.5rem);
   margin-bottom: 0.2em;
   color: #b30000;
 }
+
 h1 {
   font-size: 2.5rem;
   color: #b30000;
@@ -111,6 +112,7 @@ h2 {
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
+
 /* CONTENT BOXES */
 .lower-block {
   display: flex;
@@ -119,142 +121,66 @@ h2 {
   gap: 2vh;
   margin-bottom: 2vh;
 }
-/* INDEX PAGE */
-.description-box {
+
+.description-box,
+.description-box1,
+.description-box2,
+.description-box3 {
   font-family: 'Times New Roman', serif;
-  font-size: clamp(1.05rem, 4vw, 1.3rem);
-  line-height: 1.65;
-  padding: 5px 15px;
-  background: rgba(249, 255, 217, 0.65);
-  color: #b30000;
-  max-width: 95vw;
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-/* JOURNAL PAGE */
-.description-box1 {
-  font-family: 'Times New Roman', serif;
-  font-size: clamp(0.95rem, 3vw, 1.1rem);
   line-height: 1.6;
-  padding: 8px 20px;
   background: rgba(249, 255, 217, 0.65);
   color: #b30000;
   border-radius: 15px;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  margin-top: 0.5vh;
+  max-width: 95vw;
+  padding: 10px 20px;
+}
+
+.description-box1 {
+  font-size: clamp(0.95rem, 3vw, 1.1rem);
   max-height: 35vh;
   max-width: 750px;
   overflow-y: auto;
-  }
+}
 .description-box1.scrollable {
   max-height: 50vh;
-  overflow-y: auto;
 }
 
 .description-box2 {
-  font-family: 'Times New Roman', serif;
   font-size: clamp(0.9rem, 3vw, 1.1rem);
-  line-height: 1.6;
-  padding: 8px 20px;
-  margin-bottom: 1px;
-  background: rgba(249, 255, 217, 0.65);
-  color: #b30000;
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  max-width: 750px;
   max-height: 25vh;
-  overflow-y: auto;
-}
-/* GALLERY PAGE */
-.description-box3 {
-  font-family: 'Times New Roman', serif;
-  font-size: clamp(1.05rem, 4vw, 1.3rem);
-  line-height: 1.65;
-  padding: 10px 25px;
-  background: rgba(249, 255, 217, 0.65);
-  color: #b30000;
-  max-width: 95vw;
-  max-height: 55vh;
-  border-radius: 15px;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  text-align: center;
+  margin-bottom: 1px;
 }
 
+.description-box3 {
+  font-size: clamp(1.05rem, 4vw, 1.3rem);
+  max-height: 55vh;
+}
+
+/* GALLERY SECTION */
 .gallery-section {
   margin-top: 1vh;
   margin-bottom: 0.5vh;
 }
 
 .album-links-wrapper {
-  margin-bottom: 0; /* override inline style */
+  margin-bottom: 0;
 }
 
 .album-links {
-  gap: 6px; /* tighter gap between buttons */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
   margin-top: 10px;
 }
 
-@media (max-width: 599px) {
-  .album-links {
-    gap: 4px; /* even tighter gap on mobiles */
-    margin-top: 6px;
-    margin-bottom: 0;
-  }
-
-  .gallery-section {
-    margin-bottom: 0.5vh;
-  }
-
-  nav {
-    margin-top: 0.5vh;
-  }
-}
-.gallery-section {
-  margin-top: 1vh;
-  margin-bottom: 0.5vh;
-}
-/* NAV BUTTONS */
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-nav a.fancy-button {
-  flex: 1 1 45%;
-  max-width: 220px;
-  padding: 10px 10px;
-  font-size: clamp(0.9rem, 2.5vw, 1rem);
-  background-color: rgba(179, 0, 0, 0.75);
-  color: white;
-  text-decoration: none;
-  border-radius: 12px;
-  font-weight: bold;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  backdrop-filter: blur(4px);
-  margin-top: 20px;
-}
-nav a.fancy-button:hover {
-  background-color: rgba(179, 0, 0, 0.9);
-  transform: scale(1.05);
-}
-/* ALBUM LINKS */
-.album-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
-}
 .album-link {
   display: inline-block;
   flex: 1 1 calc(50% - 12px);
   max-width: 220px;
-  padding: 10px 10px;
+  padding: 10px;
   font-size: clamp(0.9rem, 2.5vw, 1rem);
   background-color: rgba(179, 0, 0, 0.75);
   color: white;
@@ -270,18 +196,35 @@ nav a.fancy-button:hover {
   background-color: rgba(179, 0, 0, 0.9);
   transform: scale(1.05);
 }
-@media (max-width: 500px) {
-  .album-link {
-    flex: 1 1 100%;
-  }
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1vh;
 }
-/* IMAGE */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+nav a.fancy-button {
+  flex: 1 1 45%;
+  max-width: 220px;
+  padding: 10px;
+  font-size: clamp(0.9rem, 2.5vw, 1rem);
+  background-color: rgba(179, 0, 0, 0.75);
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: bold;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  backdrop-filter: blur(4px);
+  margin-top: 20px;
 }
+nav a.fancy-button:hover {
+  background-color: rgba(179, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
 /* FOOTER */
 footer {
   background-color: #b30000;
@@ -290,36 +233,31 @@ footer {
   font-size: 0.9em;
   letter-spacing: 1px;
 }
-@media (max-width: 600px) {
-  footer {
-    font-size: 0.85em;
-  }
-}
-/* MOBILE OVERRIDES FOR TEXT & BOXES */
+
+/* MOBILE OVERRIDES */
 @media (max-width: 599px) {
   .main-content {
     padding: 0.5vh 12px;
   }
 
   .main-heading {
-    font: bold;
     font-size: clamp(2rem, 6vw, 2rem);
     line-height: 1.2;
     margin-bottom: 0.1em;
   }
+
   body.journal-page .main-heading {
     font-size: clamp(1.5rem, 4.5vw, 1.5rem);
   }
 
   .subtitle {
-    font: bold;
     font-size: clamp(1.75rem, 5.5vw, 1.8rem);
     line-height: 1.3;
   }
 
-  .description-box {
-    /*font-size: clamp(1rem, 6vw, 1.4rem);*/
-   font-size: clamp(1.05rem, 4vw, 1.3rem);
+  .description-box,
+  .description-box3 {
+    font-size: clamp(1.05rem, 4vw, 1.3rem);
     padding: 14px 20px;
     margin-top: 0.1vh;
   }
@@ -337,30 +275,9 @@ footer {
     max-height: 25vh;
     margin-top: 0.1vh;
   }
-   .description-box3 {
-    /*font-size: clamp(1rem, 5vw, 1.8rem);*/
-    font-size: clamp(1.05rem, 4vw, 1.3rem);
-    padding: 1px 18px;
-    margin-top: 0.1vh;
-   }
 
-.gallery-section {
-  margin-top: 1vh;
-  margin-bottom: 0.5vh;
-}
-
-.album-links-wrapper {
-  margin-bottom: 0; /* override inline style */
-}
-
-.album-links {
-  gap: 6px; /* tighter gap between buttons */
-  margin-top: 10px;
-}
-
-@media (max-width: 599px) {
   .album-links {
-    gap: 4px; /* even tighter gap on mobiles */
+    gap: 4px;
     margin-top: 6px;
     margin-bottom: 0;
   }
@@ -372,70 +289,42 @@ footer {
   nav {
     margin-top: 0.5vh;
   }
-}
-.gallery-section {
-  margin-top: 1vh;
-  margin-bottom: 0.5vh;
-}
+
+  .album-link {
+    flex: 1 1 100%;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
   .language-button {
     font-size: 0.8rem;
     white-space: nowrap;
   }
- 
 
-  nav a.fancy-button,
-  .album-link {
-    flex: 1 1 35%;
-    font-size: clamp(0.85rem, 4vw, 0.95rem);
-    padding: 8px;
-    margin: 4px;
-  }
-  body.gallery-page .album-link {
-    font-size: 0.75rem;
-    padding: 5px 10px;
-  }
-  body.gallery-page .subtitle {
-    font-size: clamp(0.9rem, 3vw, 1rem);
-  
-
-  .header-box {
-    padding: 0.8rem 1.2rem;
-  }
-   body.journal-page .header-box {
-    padding: 0.4rem 0.6rem;
-   }
-  .header-boxit {
-    padding: 0.1rem 0.6rem;
-  }
-  h2 {
-    font-size: 1.95rem;
-  }
-
-  footer,
-  .site-footer {
+  footer {
     font-size: 1rem;
     padding: 10px;
     text-align: center;
   }
-  ul li {
-    margin-bottom: 1px;
-  }
+}
 
-  p, li, span, a {
-    font-size: clamp(1rem, 4vw, 1.2rem);
-  }
- }
- @media (max-width: 768px) {
+/* Mobile height fixes */
+@media (max-width: 768px) {
   html, body {
-    height: auto !important;
-    min-height: 100dvh !important;
+    min-height: 100svh;
+    height: auto;
+    display: block;
   }
 
   .page-container {
-    min-height: 100svh !important;
+    min-height: auto;
   }
 
   .main-content {
-    min-height: auto !important;
+    min-height: auto;
+  }
+
+  body {
+    background-attachment: scroll;
   }
  }
