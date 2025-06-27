@@ -377,6 +377,11 @@ footer {
   margin-top: 1vh;
   margin-bottom: 0.5vh;
 }
+  .language-button {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+ 
 
   nav a.fancy-button,
   .album-link {
