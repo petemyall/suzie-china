@@ -1,4 +1,4 @@
-
+ 
 @font-face {
   font-family: 'Noto Serif CJK SC';
   src: url('NotoSerifCJKsc-Light.woff2') format('woff2');
@@ -149,7 +149,7 @@ h2 {
   overflow-y: auto;
 }
 .description-box1.scrollable {
-  max-height: 50vh;
+  max-height: 52vh;
 }
 
 .description-box2 {
