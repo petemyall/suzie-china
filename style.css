@@ -1,4 +1,4 @@
- 
+9 
 @font-face {
   font-family: 'Noto Serif CJK SC';
   src: url('NotoSerifCJKsc-Light.woff2') format('woff2');
@@ -157,6 +157,10 @@ h2 {
 }
 
 /*language.html*/
+.description-box2 {
+  max-width: 750px;
+  overflow-y: auto;
+}
 .description-box2.scrollable {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   max-height: 25vh;
@@ -171,6 +175,10 @@ h2 {
 }
 
 /*day1.html journal*/
+.description-box4 {
+  max-width: 750px;
+  overflow-y: auto;
+}
 .description-box4.scrollable {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   max-height: 55vh;
