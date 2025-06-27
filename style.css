@@ -198,12 +198,12 @@ h2 {
 
 @media (max-width: 599px) {
   .album-links {
-    gap: 4px; /* even tighter gap on mobiles */
+    gap: 2px; /* even tighter gap on mobiles */
     margin-top: 6px;
     margin-bottom: 0;
   }
 
-  .itinerary-section {
+  .gallery-section {
     margin-bottom: 0.5vh;
   }
 
