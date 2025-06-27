@@ -318,7 +318,7 @@ footer {
     margin: 4px;
   }
  @media (max-width: 500px) {
-  .learn-button {
+  .language-button {
     font-size: 0.8rem;
     white-space: nowrap;
   }
