@@ -137,6 +137,7 @@ h2 {
   padding: 10px 20px;
 }
 
+/*index.html*/
 .description-box {
   font-size: clamp(1.05rem, 4vw, 1.3rem);
   margin-top: 20vh;
@@ -148,6 +149,7 @@ h2 {
   max-width: 750px;
   overflow-y: auto;
 }
+/*itinerary.html*/
 .description-box1.scrollable {
   max-height: 52vh;
  margin-top: 45px;
