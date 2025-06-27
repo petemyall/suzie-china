@@ -297,18 +297,6 @@ footer {
 }
 /* MOBILE OVERRIDES FOR TEXT & BOXES */
 @media (max-width: 599px) {
-  html, body {
-    height: auto;
-    min-height: 100dvh;
-  }
-
-  .page-container {
-    min-height: 100svh;
-  }
-
-  .main-content {
-    min-height: auto;
-  }
   .main-content {
     padding: 0.5vh 12px;
   }
@@ -435,5 +423,19 @@ footer {
 
   p, li, span, a {
     font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+ }
+ @media (max-width: 768px) {
+  html, body {
+    height: auto !important;
+    min-height: 100dvh !important;
+  }
+
+  .page-container {
+    min-height: 100svh !important;
+  }
+
+  .main-content {
+    min-height: auto !important;
   }
  }
