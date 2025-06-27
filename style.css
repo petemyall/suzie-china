@@ -182,36 +182,6 @@ h2 {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-.gallery-section {
-  margin-top: 1vh;
-  margin-bottom: 0.5vh;
-}
-
-.album-links-wrapper {
-  margin-bottom: 0; /* override inline style */
-}
-
-.album-links {
-  gap: 6px; /* tighter gap between buttons */
-  margin-top: 10px;
-}
-
-@media (max-width: 599px) {
-  .album-links {
-    gap: 2px; /* even tighter gap on mobiles */
-    margin-top: 6px;
-    margin-bottom: 0;
-  }
-
-  .gallery-section {
-    margin-bottom: 0.5vh;
-  }
-
-  nav {
-    margin-top: 0.5vh;
-  }
-}
-
 /* NAV BUTTONS */
 nav {
   display: flex;
@@ -347,12 +317,6 @@ footer {
     padding: 8px;
     margin: 4px;
   }
- @media (max-width: 500px) {
-  .language-button {
-    font-size: 0.8rem;
-    white-space: nowrap;
-  }
- }
   body.gallery-page .album-link {
     font-size: 0.75rem;
     padding: 5px 10px;
@@ -387,4 +351,4 @@ footer {
   p, li, span, a {
     font-size: clamp(1rem, 4vw, 1.2rem);
   }
-                   }
+ }
