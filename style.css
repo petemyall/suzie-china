@@ -322,6 +322,7 @@ footer {
 
   .main-content {
     min-height: auto;
+    padding-top: 4vh;
   }
 
   body {
