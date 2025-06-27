@@ -182,6 +182,40 @@ h2 {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
+.gallery-section {
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}
+
+.album-links-wrapper {
+  margin-bottom: 0; /* override inline style */
+}
+
+.album-links {
+  gap: 6px; /* tighter gap between buttons */
+  margin-top: 10px;
+}
+
+@media (max-width: 599px) {
+  .album-links {
+    gap: 4px; /* even tighter gap on mobiles */
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+
+  .gallery-section {
+    margin-bottom: 0.5vh;
+  }
+
+  nav {
+    margin-top: 0.5vh;
+  }
+}
+.gallery-section {
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}
 /* NAV BUTTONS */
 nav {
   display: flex;
@@ -309,6 +343,40 @@ footer {
     padding: 1px 18px;
     margin-top: 0.1vh;
    }
+
+.gallery-section {
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}
+
+.album-links-wrapper {
+  margin-bottom: 0; /* override inline style */
+}
+
+.album-links {
+  gap: 6px; /* tighter gap between buttons */
+  margin-top: 10px;
+}
+
+@media (max-width: 599px) {
+  .album-links {
+    gap: 4px; /* even tighter gap on mobiles */
+    margin-top: 6px;
+    margin-bottom: 0;
+  }
+
+  .gallery-section {
+    margin-bottom: 0.5vh;
+  }
+
+  nav {
+    margin-top: 0.5vh;
+  }
+}
+.gallery-section {
+  margin-top: 1vh;
+  margin-bottom: 0.5vh;
+}
 
   nav a.fancy-button,
   .album-link {
