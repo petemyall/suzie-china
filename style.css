@@ -261,6 +261,11 @@ footer {
     padding: 14px 20px;
     margin-top: 0.1vh;
   }
+  .description-box {
+    font-size: clamp(1.05rem, 4vw, 1.3rem);
+    padding: 14px 20px;
+    margin-top: 5vh;
+  }
 
   .description-box1 {
     font-size: clamp(1rem, 5vw, 1.8rem);
@@ -291,7 +296,7 @@ footer {
   }
 
   .album-link {
-    flex: 1 1 48%;
+    flex: 1 1 45%;
     font-size: 0.75rem;
     padding: 5px 10px;
   }
