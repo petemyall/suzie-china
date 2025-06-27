@@ -291,7 +291,7 @@ footer {
   }
 
   .album-link {
-    flex: 1 1 100%;
+    flex: 1 1 48%;
     font-size: 0.75rem;
     padding: 5px 10px;
   }
