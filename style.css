@@ -297,6 +297,18 @@ footer {
 }
 /* MOBILE OVERRIDES FOR TEXT & BOXES */
 @media (max-width: 599px) {
+  html, body {
+    height: auto;
+    min-height: 100dvh;
+  }
+
+  .page-container {
+    min-height: 100svh;
+  }
+
+  .main-content {
+    min-height: auto;
+  }
   .main-content {
     padding: 0.5vh 12px;
   }
