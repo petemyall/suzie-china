@@ -304,7 +304,8 @@ footer {
     margin-top: 0.1vh;
   }
    .description-box3 {
-    font-size: clamp(1rem, 5vw, 1.8rem);
+    /*font-size: clamp(1rem, 5vw, 1.8rem);*/
+    font-size: clamp(1.05rem, 4vw, 1.3rem);
     padding: 1px 18px;
     margin-top: 0.1vh;
    }
