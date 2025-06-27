@@ -171,10 +171,10 @@ h2 {
 }
 
 /*day1.html journal*/
-.description-box4 {
-  font-size: clamp(1.05rem, 4vw, 1.3rem);
+.description-box4.scrollable {
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
   max-height: 55vh;
-  margin-top: 89px;
+  margin-top: 1px;
 }
 
 /* GALLERY SECTION */
