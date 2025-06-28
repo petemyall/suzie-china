@@ -288,7 +288,7 @@ footer {
   .description-box {
     font-size: clamp(1.05rem, 4vw, 1.3rem);
     padding: 14px 20px;
-    margin-top: 15vh;
+    margin-top: 5vh;
     max-height: 40vh;
   }
 
@@ -335,6 +335,13 @@ footer {
     font-size: 1rem;
     padding: 10px;
     text-align: center;
+  }
+}
+/*PWA Height fixes */
+@media all and (display-mode: standalone) {
+  .description-box {
+    margin-top: 5vh;
+    max-height: 40vh;
   }
 }
 
