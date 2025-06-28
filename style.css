@@ -285,6 +285,7 @@ footer {
     padding: 14px 20px;
     margin-top: 0.1vh;
   }
+  /* index.html */
   .description-box {
     font-size: clamp(1.05rem, 4vw, 1.3rem);
     padding: 14px 20px;
@@ -337,12 +338,35 @@ footer {
     text-align: center;
   }
 }
-/*PWA Height fixes */
+/*PWA HEIGHT FIXES */
+
+/* index.html */
 @media all and (display-mode: standalone) {
   .description-box {
     margin-top: 18vh;
     max-height: 40vh;
   }
+/* day1.html journal */
+  .description-box4.scrollable {
+  max-height: 52vh;
+  margin-top: 5vh;
+  }
+  
+  / *gallery.html* /
+.description-box3 {
+  max-height: 55vh;
+  margin-top: 89px;
+}
+  /* language.html */
+  .description-box2.scrollable {
+  max-height: 52vh;
+  margin-top: 15vh;
+  }
+  /* itinerary.html */
+  .description-box1.scrollable {
+  max-height: 45vh;
+ margin-top: 10vh;
+  }  
 }
 
 /* Mobile height fixes */
