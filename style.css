@@ -180,7 +180,7 @@ h2 {
 .description-box4.scrollable {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   max-height: 55vh;
-  margin-top: 1px;
+  margin-top: 15vh;
 }
 
 /* GALLERY SECTION */
