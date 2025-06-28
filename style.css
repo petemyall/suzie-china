@@ -164,7 +164,7 @@ h2 {
 .description-box2.scrollable {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
   max-height: 25vh;
-  margin-bottom: 1px;
+  margin-top: 15vh;
 }
 
 /*gallery.html*/
