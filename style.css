@@ -1,4 +1,3 @@
-9 
 @font-face {
   font-family: 'Noto Serif CJK SC';
   src: url('NotoSerifCJKsc-Light.woff2') format('woff2');
@@ -163,8 +162,8 @@ h2 {
 }
 .description-box2.scrollable {
   font-size: clamp(0.9rem, 3vw, 1.1rem);
-  max-height: 25vh;
-  margin-top: 45vh;
+  max-height: 40vh;
+  margin-top: 25vh;
 }
 
 /*gallery.html*/
