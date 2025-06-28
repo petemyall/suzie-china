@@ -344,7 +344,7 @@ footer {
 @media all and (display-mode: standalone) {
   /* index.html */
   .description-box {
-    margin-top: 30vh;
+    margin-top: 40vh;
     max-height: 40vh;
   }
 /* day1.html journal */
