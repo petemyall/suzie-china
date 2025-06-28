@@ -340,7 +340,7 @@ footer {
 /*PWA Height fixes */
 @media all and (display-mode: standalone) {
   .description-box {
-    margin-top: 5vh;
+    margin-top: 15vh;
     max-height: 40vh;
   }
 }
