@@ -145,14 +145,13 @@ h2 {
 
 .description-box1 {
   font-size: clamp(0.95rem, 3vw, 1.1rem);
-  max-height: 37vh;
   max-width: 750px;
   overflow-y: auto;
 }
 /*itinerary.html*/
 .description-box1.scrollable {
   max-height: 52vh;
- margin-top: 45px;
+ margin-top: 10vh;
 }
 
 /*language.html*/
