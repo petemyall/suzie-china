@@ -338,7 +338,7 @@ footer {
     text-align: center;
   }
 }
-/*PWA HEIGHT FIXES */
+/ *PWA HEIGHT FIXES * /
 
 /* index.html */
 @media all and (display-mode: standalone) {
@@ -349,7 +349,7 @@ footer {
 /* day1.html journal */
   .description-box4.scrollable {
   max-height: 52vh;
-  margin-top: 5vh;
+  margin-top: 15vh;
   }
   
   / *gallery.html* /
