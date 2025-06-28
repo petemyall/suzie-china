@@ -342,6 +342,14 @@ footer {
 
 
 @media all and (display-mode: standalone) {
+  body::before {
+    content: "Standalone mode active!";
+    display: block;
+    background: yellow;
+    color: black;
+    padding: 10px;
+    font-weight: bold;
+  }
   /* index.html */
   .description-box {
     margin-top: 40vh;
