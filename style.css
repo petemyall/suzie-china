@@ -38,9 +38,7 @@ body.gallery-page { background-image: url('images/gallery-page-background.jpg');
 body.language-page { background-image: url('images/language-page-background.jpg'); }
 body.itinerary-page { background-image: url('images/itinerary-page-background.jpg'); }
 body.journal-page { background-image: url('images/journal-page-background.jpg'); }
-body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-page) {
-  background-image: url('images/home-page-background.jpg');
-}
+
 
 /* PAGE LAYOUT */
 .page-container {
@@ -399,3 +397,13 @@ footer {
     background-attachment: scroll;
   }
  }
+
+
+.hero-img-wrap {
+  max-width: 100%;
+}
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto; /* Keeps aspect ratio so full image always shows */
+}
