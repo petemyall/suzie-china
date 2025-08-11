@@ -264,6 +264,7 @@ footer {
   
   body {
     background-size: contain;
+    background-position: top;
   }
   .main-content {
     padding: 0.5vh 12px;
