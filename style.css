@@ -264,6 +264,7 @@ footer {
   
   body {
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: top;
   }
   .main-content {
