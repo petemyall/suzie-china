@@ -399,11 +399,27 @@ footer {
  }
 
 
-.hero-img-wrap {
+
+
+/* Hero with overlay title (index) */
+.hero { 
+  position: relative; 
   max-width: 100%;
 }
-.hero-img {
+.hero__img {
   display: block;
   width: 100%;
-  height: auto; /* Keeps aspect ratio so full image always shows */
+  height: auto; /* full image always visible */
 }
+.hero__overlay {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: clamp(8px, 2.5vh, 24px);
+  width: min(92vw, 900px);
+  padding: 0 8px;
+}
+
+/* Tighten spacing now that title sits over the image */
+.header-box { margin: 0; }
+.description-box { margin-top: 1.25rem; }
