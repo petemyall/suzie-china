@@ -38,7 +38,9 @@ body.gallery-page { background-image: url('images/gallery-page-background.jpg');
 body.language-page { background-image: url('images/language-page-background.jpg'); }
 body.itinerary-page { background-image: url('images/itinerary-page-background.jpg'); }
 body.journal-page { background-image: url('images/journal-page-background.jpg'); }
-
+body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-page) {
+  background-image: url('images/home-page-background.jpg');
+}
 
 /* PAGE LAYOUT */
 .page-container {
@@ -397,29 +399,3 @@ footer {
     background-attachment: scroll;
   }
  }
-
-
-
-
-/* Hero with overlay title (index) */
-.hero { 
-  position: relative; 
-  max-width: 100%;
-}
-.hero__img {
-  display: block;
-  width: 100%;
-  height: auto; /* full image always visible */
-}
-.hero__overlay {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: clamp(8px, 2.5vh, 24px);
-  width: min(92vw, 900px);
-  padding: 0 8px;
-}
-
-/* Tighten spacing now that title sits over the image */
-.header-box { margin: 0; }
-.description-box { margin-top: 1.25rem; }
