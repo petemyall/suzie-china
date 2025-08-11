@@ -266,7 +266,8 @@ footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
-  }
+    background-color: #909E9B;
+     }
   .main-content {
     padding: 0.5vh 12px;
   }
