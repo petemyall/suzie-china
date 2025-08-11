@@ -261,6 +261,10 @@ footer {
 
 /* MOBILE OVERRIDES */
 @media (max-width: 599px) {
+  
+  body {
+    background-size: contain;
+  }
   .main-content {
     padding: 0.5vh 12px;
   }
