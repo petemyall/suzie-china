@@ -263,11 +263,11 @@ footer {
 @media (max-width: 599px) {
   
   body {
-    background-size: cover;
+    background-size: calc(100% - 2px) auto; /* 2px safety so it never overhangs */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-color: #3a3a3a;
-     }
+  }
   .header-boxit {
    padding: 0.25vh 0.75rem;
    margin-bottom: 5px;
