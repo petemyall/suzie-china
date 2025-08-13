@@ -265,7 +265,7 @@ footer {
   body {
     background-size: calc(100% - 2px) auto; /* 2px safety so it never overhangs */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
     background-color: #3a3a3a;
   }
   .header-boxit {
@@ -354,7 +354,7 @@ footer {
     text-align: center;
   }
 }
-/ *PWA HEIGHT FIXES * /
+/* PWA HEIGHT FIXES */
 
 
 @media all and (display-mode: standalone) {
@@ -377,7 +377,7 @@ footer {
   margin-top: 25vh;
   }
   
-  / *gallery.html* /
+  /* gallery.html */
 .description-box3 {
   max-height: 55vh;
   margin-top: 89px;
