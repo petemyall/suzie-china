@@ -305,7 +305,7 @@ footer {
   .description-box {
     font-size: clamp(1.05rem, 4vw, 1.3rem);
     padding: 14px 20px;
-    margin-top: 5vh;
+    margin-top: 2vh;
     max-height: 40vh;
   }
 
