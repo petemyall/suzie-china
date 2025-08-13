@@ -275,10 +275,14 @@ footer {
   .main-content {
     padding: 0.5vh 12px;
   }
+  .header-box {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
 
   .main-heading {
     font-size: clamp(2.25rem, 6.25vw, 2.25rem);
-    margin-bottom: 0.01em;
+    margin-bottom: 0;
   }
 
   body.journal-page .main-heading {
@@ -287,6 +291,7 @@ footer {
 
   .subtitle {
     font-size: clamp(1.5rem, 4vw, 1.5rem);
+    margin-top: 0;
     margin-bottom: 0.01em;
     
   }
