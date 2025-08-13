@@ -277,9 +277,8 @@ footer {
   }
 
   .main-heading {
-    font-size: clamp(2rem, 6vw, 2rem);
-    line-height: 1.2;
-    margin-bottom: 0.1em;
+    font-size: clamp(3rem, 7vw, 3rem);
+    margin-bottom: 5px;
   }
 
   body.journal-page .main-heading {
