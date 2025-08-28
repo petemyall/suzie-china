@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="A detailed photo and journal record of Suzie's unforgettable 2025 holiday to China.">
+  <title>Suzie's China Trip</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Apple-specific PWA support -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Suzie's China Trip">
+  <link rel="apple-touch-icon" href="images/icon-512x512.png">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <div class="page-container">
+    <main>
+      <div class="main-content">
+
+        <!-- Group 1: Header only -->
+        <div class="header-box">
+          <h1 class="main-heading">Grand Tour of China</h1>
+          <h2 class="subtitle">苏茜在中国的奇遇记</h2>
+
+          <!-- Countdown / Bon Voyage banner -->
+          <div id="countdown"
+               aria-live="polite"
+               role="status"
+               style="margin:12px auto 0; max-width:28rem; text-align:center; font-weight:700; padding:10px 14px; border:1px solid rgba(0,0,0,.12); border-radius:12px; backdrop-filter:saturate(120%);">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <!-- Group 2: Description and nav near footer -->
+        <div class="lower-block">
+          <div class="description-box">
+            <p>
+              <strong>Join mother-and-son team, Suzie and Jazz</strong> as they embark on a whirlwind adventure through China, from ancient temples to cosy teahouses.
+              Expect candid travel journals, unforgettable photo gems (yes, even selfie-stick cameos), a perfectly planned itinerary, and language tips that go way beyond “nǐ hǎo.”
+            </p>
+          </div>
+          <nav>
+            <a href="journals/day 1.html" class="fancy-button">🗺️ Explore Day 1</a>
+            <a href="gallery.html" class="fancy-button">📸 View Gallery</a>
+            <a href="language.html" class="fancy-button language-button">🈶 Basic Mandarin</a>
+            <a href="itinerary.html" class="fancy-button">🗾 View Itinerary</a>
+          </nav>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      © Suzie 2025 | 「旅程从这里开始」– The journey begins here.
+    </footer>
+  </div>
+
+  <script>
+    // --- Viewport fix for mobile address-bar jump ---
+    function updateVH() {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    window.addEventListener('resize', updateVH);
+    window.addEventListener('orientationchange', updateVH);
+    updateVH();
+
+    // --- Countdown → Bon Voyage → Hide ---
+    const departureMidnight = new Date(2025, 8, 8, 0, 0, 0).getTime(); // midnight 8 Sept
+    const hideDate = new Date(2025, 8, 9, 0, 0, 0).getTime();          // midnight 9 Sept
+
+    const el = document.getElementById('countdown');
+
+    function renderBonVoyage() {
+      el.innerHTML = '一路平安 — Yīlù píng’ān<br><span style="font-weight:500;">Bon voyage, Suzie &amp; Jazz!</span>';
+    }
+
+    function tick() {
+      const now = Date.now();
+
+      if (now >= hideDate) {
+        el.style.display = "none"; // Hide completely after 8th
+        clearInterval(timer);
+        return;
+      }
+
+      if (now >= departureMidnight) {
+        renderBonVoyage(); // Show on 8th Sept
+        return;
+      }
+
+      const remaining = departureMidnight - now;
+      const d = Math.floor(remaining / (1000 * 60 * 60 * 24));
+      const h = Math.floor((remaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const m = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+      const s = Math.floor((remaining % (1000 * 60)) / 1000);
+
+      el.textContent = `Suzie & Jazz leave in: ${d}d ${h}h ${m}m ${s}s`;
+    }
+
+    if (el) {
+      const timer = setInterval(tick, 1000);
+      tick();
+    }
+  </script>
+</body>
+</html>
