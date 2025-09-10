@@ -146,7 +146,7 @@ h2 {
 
 /* Ensure journal images scale properly */
 .image-frame img {
-  width: 48%;   /* fit horizontally */
+  width: 45%;   /* fit horizontally */
   height: auto;      /* keep proportions */
   display: block;
   margin: 15px auto; /* center it with spacing */
