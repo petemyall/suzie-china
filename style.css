@@ -41,7 +41,7 @@ body.journal-page { background-image: url('images/journal-page-background.jpg');
 body:not(.gallery-page):not(.language-page):not(.itinerary-page):not(.journal-page) {
   background-image: url('images/home-page-background.jpg');
 }
-body.journal-index::before {
+body.journal-page::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
