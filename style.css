@@ -154,7 +154,7 @@ h2 {
 .description-box4 {
   font-size: 0.9em;   /* smaller text */
   line-height: 1.3;   /* slightly tighter lines */
-  max-height: 50vh;   /* allow text
+  max-height: none;   /* allow text
 }
 
 /* Ensure journal images scale properly */
