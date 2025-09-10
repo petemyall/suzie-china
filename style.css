@@ -344,7 +344,7 @@ margin-top: auto;
   font-size: 0.8em;   /* smaller text for balance */
   line-height: 1.2;
   max-height: 40vh;
-  margin-bottom: 2px;
+  margin-bottom: -5px;
 }
 
   .album-links {
