@@ -324,6 +324,11 @@ margin-top: auto;
     max-height: 25vh;
     margin-top: 0.1vh;
   }
+.description-box4.scrollable {
+  font-size: 0.9em;   /* smaller text for balance */
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
 
   .album-links {
     gap: 4px;
