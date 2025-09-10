@@ -341,10 +341,10 @@ margin-top: auto;
     margin-top: 0.1vh;
   }
 .description-box4.scrollable {
-  font-size: 0.9em;   /* smaller text for balance */
-  line-height: 1.4;
+  font-size: 0.85em;   /* smaller text for balance */
+  line-height: 1.2;
   max-height: 40vh;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
   .album-links {
