@@ -343,7 +343,7 @@ margin-top: auto;
 .description-box4.scrollable {
   font-size: 0.9em;   /* smaller text for balance */
   line-height: 1.4;
-  max-height: 45vh;
+  max-height: 40vh;
   margin-bottom: 5px;
 }
 
